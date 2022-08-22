@@ -1,0 +1,4 @@
+The project was implemented using Visual Studio 2022, the structure is sligth different than VS2019 structure. 
+It can not be opened due to some IDE issues.
+The solution contains get requests for NBA games from 2017 and 2019 seasons and it displays top 10 teams with the highes scores
+on a view located in Views/NBAGames folder.
