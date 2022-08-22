@@ -1,0 +1,39 @@
+﻿@model NBAGames.Models.NBAGamesModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>NBA Games Season 2017, 2019</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NBAGames.FirstOrDefault().Date);
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NBAGames.FirstOrDefault().Name);
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NBAGames.FirstOrDefault().Score);
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model.NBAGames)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Score)
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
